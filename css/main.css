@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+:root {
+  --main-color-one: #1c1919;
+  --main-color-two: #fab324;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(
+    var(--main-color-one) 50%,
+    var(--main-color-two) 50%
+  );
+}
+
+.container {
+  position: absolute;
+  width: 600px;
+  background-color: #1e283e;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* @media (max-width: 760px) {
+  .container {
+    top: 70%;
+  }
+} */
+
+.top-plus {
+  top: 70%;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 330px;
+  }
+}
+
+.container .search-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.search-bar input {
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+.search-bar input[type="text"] {
+  background-color: #1e283e;
+  border-bottom: 1px solid white;
+  width: 60%;
+  color: white;
+}
+
+.search-bar input[type="text"]::placeholder {
+  color: #ccc;
+}
+
+.search-bar input[type="button"] {
+  background-color: var(--main-color-two);
+  color: var(--main-color-one);
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  display: block;
+}
+
+.details {
+  width: 100%;
+}
+
+.show {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 755px) {
+  .show {
+    grid-template-columns: auto;
+  }
+}
+
+.img-movie {
+  width: auto;
+  height: 300px;
+}
+
+@media screen and (max-width: 755px) {
+  .img-movie {
+    margin-bottom: 10px;
+    margin: 0 auto 15px;
+  }
+}
+
+.img-movie img {
+  height: 100%;
+  width: 100%;
+}
+
+.about-movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 755px) {
+  .about-movie h2 {
+    margin-bottom: 15px;
+  }
+}
+
+#rate {
+  color: #ccc;
+}
+
+@media screen and (max-width: 755px) {
+  #rate {
+    margin-bottom: 15px;
+  }
+}
+
+.type-movie {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #ccc;
+}
+
+@media screen and (max-width: 755px) {
+  .type-movie {
+    margin-bottom: 15px;
+  }
+}
+
+.gener {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 755px) {
+  .gener {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+}
+
+.gener span {
+  border: 1px solid #ccc;
+  color: #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 755px) {
+  .gener span {
+    margin-bottom: 10px;
+    width: 50%;
+    text-align: center;
+  }
+}
+
+.plot,
+.cast {
+  margin-bottom: 15px;
+}
+
+.plot p,
+.cast p {
+  color: #ccc;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Movie Guide</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="search-bar">
+        <input id="search-text" type="text" placeholder="Movie Name" />
+        <input id="search-button" type="button" value="Search" />
+      </div>
+      <div class="details hidden">
+        <div class="show">
+          <div class="img-movie">
+            <img src="" alt="" />
+          </div>
+          <div class="about-movie">
+            <h2></h2>
+            <p id="rate"></p>
+            <p class="type-movie">
+              <span id="rated"></span><span id="released"></span
+              ><span id="runtime"></span>
+            </p>
+            <div class="gener"></div>
+          </div>
+        </div>
+        <div class="plot">
+          <span>Plot:</span>
+          <p></p>
+        </div>
+        <div class="cast">
+          <span>Cast:</span>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
